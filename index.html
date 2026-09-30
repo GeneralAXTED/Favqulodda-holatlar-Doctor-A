@@ -5,253 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Klinika Shoshilinch Kodlari</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background-overlay" id="bg-overlay"></div>
-    
-    <nav class="glass-nav">
-        <div class="logo">
-            <i class="fa-solid fa-truck-medical"></i>
-            <span>Favqulodda Holatlar</span>
-        </div>
-        <div class="nav-buttons">
-            <button class="nav-btn active" data-target="kok-kod">
-                <i class="fa-solid fa-heart-pulse"></i> Ko'k Kod
-            </button>
-            <button class="nav-btn" data-target="oq-kod">
-                <i class="fa-solid fa-shield-halved"></i> Oq Kod
-            </button>
-            <button class="nav-btn" data-target="qizil-kod">
-                <i class="fa-solid fa-fire"></i> Qizil Kod
-            </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <strong>SHOSHILINCH</strong>KODLAR
+            </div>
+            <ul class="nav-links">
+                <li><a href="#kok-kod">KO'K KOD</a></li>
+                <li><a href="#oq-kod">OQ KOD</a></li>
+                <li><a href="#qizil-kod">QIZIL KOD</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main class="content-container glass-panel">
-        <!-- KO'K KOD SECTION -->
-        <section id="kok-kod" class="code-section active">
-            <div class="section-header">
-                <div class="icon-wrapper blue">
-                    <i class="fa-solid fa-heart-pulse"></i>
-                </div>
-                <h1>"KO'K KOD" FAOLLASHTIRILGANDA<br><span>Xodimlarining Harakat Algoritmi</span></h1>
-            </div>
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-subtitle">FAVQULODDA HOLATLAR TIZIMI</h2>
+            <h1 class="hero-title">XODIMLAR UCHUN<br>HARAKAT ALGORITMLARI</h1>
+            <p class="hero-desc">Klinikada xavf signallari faollashtirilganda bajarilishi shart bo'lgan ko'rsatmalar</p>
+        </div>
+    </header>
+
+    <!-- KO'K KOD SECTION -->
+    <section id="kok-kod" class="code-section bg-blue">
+        <div class="container">
+            <h2 class="section-title">«KO'K KOD»</h2>
+            <p class="section-subtitle">TIBBIY SHOSHILINCH HOLAT: XODIMLARNING HARAKAT ALGORITMI</p>
+            <div class="divider"></div>
             
-            <div class="content-body">
-                <div class="card warning-card">
-                    <h3><i class="fa-solid fa-bullhorn"></i> 1. "KO'K KOD"ni qanday faollashtirish kerak</h3>
-                    <p>“KO‘K KOD” xavf signalini faollashtirish uchun klinika anesteziologi bilan zudlik bilan bog‘lanish kerak.</p>
-                    <p>Dispetcherga aniq va ravon tarzda <strong>"KO‘K KOD"</strong> deb ayting hamda hodisa sodir bo‘lgan joyni aniq ko‘rsating. Eng muhimi — vahimaga tushmang va belgilangan harakat rejasiga amal qiling. Dispetcher sizni to‘g‘ri tushunganiga va joylashuvingizni aniqlashtirganiga ishonch hosil qiling.</p>
-                    <div class="alert-box">
-                        <strong>XAVF SIGNALINI E'LON QILISH:</strong><br>
-                        “DIQQAT! KO‘K KOD!” — [hodisa sodir bo‘lgan joy]
-                        <br><em>Xabar o'zbek va rus tillarida 2 martadan takrorlanishi shart! (Masalan: “KO‘K KOD”, 1-QAVAT, UTT XONASI.)</em>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h3>2. Shoshilinch holatni aniqlash va faollashtirish</h3>
-                    <ul>
-                        <li><strong>Holat:</strong> Hushsiz, nafas olmayotgan (yoki agonal), pulsi aniqlanmayotgan bemor.</li>
-                        <li><strong>Faollashtirish:</strong> Zudlik bilan baland ovozda: “KO‘K KOD, [bo‘lim/xona]” deb e’lon qiling.</li>
-                        <li>Shoshilinch chaqiruv tugmasini bosing (agar bo'lsa) va ichki raqam orqali reanimatsiya brigadasini chaqiring.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>3. Bazaviy reanimatsiya tadbirlari (BLS)</h3>
-                    <p>Reanimatsiya jamoasi yetib kelguniga qadar:</p>
-                    <ul>
-                        <li>Bemorni qattiq va tekis yuzaga yotqizing.</li>
-                        <li>Nafas va pulsni baholang (10 soniyadan ko‘p emas).</li>
-                        <li><strong>YO‘R (CPR) boshlang:</strong> Ko‘krak qafasi kompressiyasi va nafas nisbati — <strong>30:2</strong></li>
-                        <li>Kompressiya tezligi: daqiqasiga 100–120 marta, chuqurligi: 5–6 sm.</li>
-                        <li>Nafas yo‘llarining o‘tkazuvchanligini ta’minlang. Mavjud bo‘lsa, Ambu qopchasidan foydalaning.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>4. Jamoaning yetib kelishi (Team Approach)</h3>
-                    <div class="roles-grid">
-                        <div class="role"><i class="fa-solid fa-user-doctor"></i> Jamoa yetakchisi<br><small>Qaror qabul qiladi</small></div>
-                        <div class="role"><i class="fa-solid fa-hands-pressing"></i> Kompressiya<br><small>Har 2 daq. almashtiriladi</small></div>
-                        <div class="role"><i class="fa-solid fa-lungs"></i> Nafas yo'llari<br><small>Ventilyatsiya/Intubatsiya</small></div>
-                        <div class="role"><i class="fa-solid fa-syringe"></i> Dori vositalari<br><small>Tayyorlash va yuborish</small></div>
-                        <div class="role"><i class="fa-solid fa-bolt"></i> Defibrillyatsiya<br><small>Qayd etish/Vaqt</small></div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <h3>5. Kengaytirilgan reanimatsiya tadbirlari (ACLS)</h3>
-                    <ul>
-                        <li>Defibrillyator/monitorni ulash va yurak ritmini tahlil qilish (defibrillyatsiya qilinadigan yoki qilinmaydigan).</li>
-                        <li>Ko'rsatma mavjud bo'lsa defibrillyatsiya o'tkazish.</li>
-                        <li>Tasdiqlangan protokolga muvofiq dori vositalarini yuborish.</li>
-                        <li><strong>Nazorat qilish:</strong> SpO₂, Arterial qon bosimi (AQB), EKG, CO₂ darajasi.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>6. Kommunikatsiya va Yakunlash</h3>
-                    <ul>
-                        <li><strong>Muloqot:</strong> Buyruqlar aniq berilishi, topshiriq bajarilganini qayta tasdiqlash (Closed-Loop Communication).</li>
-                        <li><strong>To'xtatish (ROSC):</strong> Spontan qon aylanishining tiklanishi - bemorni RITB (O'RIT) ga o'tkazish.</li>
-                        <li><strong>To'xtatish qarori:</strong> Faqat shifokor - jamoa yetakchisi qabul qiladi.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>7. Yakunlangandan keyingi harakatlar va Majburiyatlar</h3>
-                    <ul>
-                        <li><strong>Hujjatlashtirish:</strong> Boshlanish vaqti, jamoa, bajarilgan tadbirlar, dorilar, yakuniy natija.</li>
-                        <li><strong>Tahlil (Debriefing):</strong> Nimalar to'g'ri bajarildi, nimalarni takomillashtirish kerak.</li>
-                        <li><strong>Majburiyatlar:</strong> Har bir xodim BLS bajara olishi, defibrillyator joyini bilishi va mashg'ulotlarda qatnashishi shart.</li>
-                    </ul>
+            <div class="content-block">
+                <h3>1. "KO'K KOD"ni qanday faollashtirish kerak?</h3>
+                <p>“KO‘K KOD” xavf signalini faollashtirish uchun klinika anesteziologi bilan zudlik bilan bog‘lanish kerak.</p>
+                <p>Dispetcherga aniq va ravon tarzda <strong>"KO‘K KOD"</strong> deb ayting hamda hodisa sodir bo‘lgan joyni aniq ko‘rsating.</p>
+                <div class="highlight-box">
+                    <strong>XAVF SIGNALINI E'LON QILISH:</strong><br>
+                    “DIQQAT! KO‘K KOD!” — [hodisa sodir bo‘lgan joy]<br>
+                    <em>Xabar o'zbek va rus tillarida 2 martadan takrorlanishi shart!</em>
                 </div>
             </div>
-        </section>
 
-        <!-- OQ KOD SECTION -->
-        <section id="oq-kod" class="code-section">
-            <div class="section-header">
-                <div class="icon-wrapper white">
-                    <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <h1>"OQ KOD" FAOLLASHTIRILGANDA<br><span>Xodimlarining Harakat Algoritmi</span></h1>
+            <div class="content-block">
+                <h3>2. Shoshilinch holatni aniqlash va faollashtirish</h3>
+                <ul>
+                    <li><strong>Holat:</strong> Hushsiz, nafas olmayotgan (yoki agonal), pulsi aniqlanmayotgan bemor.</li>
+                    <li><strong>Faollashtirish:</strong> Zudlik bilan baland ovozda: “KO‘K KOD, [bo‘lim/xona]” deb e’lon qiling.</li>
+                    <li>Shoshilinch chaqiruv tugmasini bosing va reanimatsiya brigadasini chaqiring.</li>
+                </ul>
             </div>
-            
-            <div class="content-body">
-                <div class="card warning-card">
-                    <h3><i class="fa-solid fa-triangle-exclamation"></i> 1. "OQ KOD" nima va qachon faollashtiriladi?</h3>
-                    <p>Quyidagi holatlar bilan bog'liq: jismoniy agressiya; og‘zaki tahdidlar; buzg‘unchi (destruktiv) xatti-harakatlar; hujum qilishga urinish; hayot va sog‘liqqa tahdid.</p>
-                    <p>Signalni faollashtirish uchun darhol registrator yoki menejer bilan bog‘lanish zarur. Vahimaga tushmang.</p>
-                    <div class="alert-box">
-                        <strong>TASHVISH SIGNALINI E'LON QILISH:</strong><br>
-                        “DIQQAT! OQ KOD!” — [hodisa sodir bo‘lgan joy]
-                        <br><em>Xabar o'zbek va rus tillarida 2 martadan takrorlanishi shart!</em>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <h3>2. Tahdidni aniqlash va faollashtirish</h3>
-                    <ul>
-                        <li><strong>Belgilar:</strong> Baqirish, tahdid qilish, haqoratlash, noadekvat xatti-harakat, o‘ziga/atrofga zarar yetkazishga urinish.</li>
-                        <li><strong>Faollashtirish:</strong> Har qanday xodim baland ovozda “OQ KOD, [bo‘lim/xona]” deb e'lon qilish, signal tugmasini bosish yoki qo'riqlashni chaqirish huquqiga ega.</li>
-                    </ul>
-                </div>
+            <div class="content-block">
+                <h3>3. Bazaviy reanimatsiya tadbirlari (BLS)</h3>
+                <ul>
+                    <li>Bemorni qattiq va tekis yuzaga yotqizing.</li>
+                    <li>Nafas va pulsni baholang (10 soniyadan ko‘p emas).</li>
+                    <li><strong>YO‘R (CPR):</strong> Ko‘krak qafasi kompressiyasi va nafas nisbati — <strong>30:2</strong></li>
+                    <li>Kompressiya tezligi: daqiqasiga 100–120 marta, chuqurligi: 5–6 sm.</li>
+                    <li>Nafas yo‘llarining o‘tkazuvchanligini ta’minlang. Mavjud bo‘lsa, Ambu qopchasidan foydalaning.</li>
+                </ul>
+            </div>
 
-                <div class="card">
-                    <h3>3. Shaxsiy va bemorlar xavfsizligini ta'minlash</h3>
-                    <ul>
-                        <li>Xotirjamlikni saqlang va xavfsiz masofani saqlang.</li>
-                        <li>Chekinish uchun xavfsiz yo‘lni ochiq qoldiring.</li>
-                        <li>Begona shaxslar va himoyaga muhtoj bemorlarni xavfli hududdan olib chiqing.</li>
-                        <li>Hayotga bevosita tahdid bo‘lmasa, jismoniy kontaktga kirishmang.</li>
-                    </ul>
-                </div>
+            <div class="content-block">
+                <h3>4. Jamoaning yetib kelishi (Team Approach)</h3>
+                <ul>
+                    <li><strong>Jamoa yetakchisi:</strong> Qaror qabul qiladi va muvofiqlashtiradi.</li>
+                    <li><strong>Kompressiya:</strong> Uzluksiz bajariladi, har 2 daqiqada almashtiriladi.</li>
+                    <li><strong>Nafas yo'llari:</strong> Ventilyatsiya va intubatsiya.</li>
+                    <li><strong>Dori vositalari:</strong> Tayyorlash va yuborish.</li>
+                    <li><strong>Defibrillyatsiya / Hujjatlashtirish:</strong> Defibrillyator bilan ishlash, vaqtni qayd etish.</li>
+                </ul>
+            </div>
 
-                <div class="card">
-                    <h3>4. Nizoni deeskalatsiya qilish</h3>
-                    <p>Deeskalatsiya usullariga o‘qitilgan xodim:</p>
-                    <ul>
-                        <li>Tinch va sokin ohangda gapiradi.</li>
-                        <li>Sodda va aniq jumlalardan foydalanadi.</li>
-                        <li>Provokatsion gap va harakatlardan tiyiladi.</li>
-                        <li>Bemorning hissiyotlarini tan oladi va hurmat bilan munosabatda bo‘ladi, muqobil yechimlar taklif qiladi.</li>
-                    </ul>
-                </div>
+            <div class="content-block">
+                <h3>5. Kengaytirilgan reanimatsiya (ACLS) & Yakunlash</h3>
+                <ul>
+                    <li>Defibrillyatorni ulash, ritmni tahlil qilish, dori vositalarini yuborish.</li>
+                    <li>Buyruqlar aniq berilishi, topshiriq bajarilganini qayta tasdiqlash (Closed-Loop Communication).</li>
+                    <li><strong>Spontan qon aylanishining tiklanishi (ROSC):</strong> Bemorni reanimatsiyaga o'tkazish.</li>
+                    <li>Barcha jarayonlarni hujjatlashtirish va jamoaviy tahlil (Debriefing) qilish.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                <div class="card">
-                    <h3>5. Xavfsizlik xizmati va Tibbiy choralar</h3>
-                    <ul>
-                        <li><strong>Xavfsizlik:</strong> Agressiv shaxsni xavfsiz izolyatsiya qilish, hududga kirishni nazorat qilish. Zarur bo'lsa Milliy gvardiyani chaqirish.</li>
-                        <li><strong>Tibbiy choralar (Shifokor ko'rsatmasi bilan):</strong> Ruhiy holatni baholash, dori vositalari bilan sedatsiya, zarurat tug'ilsa tibbiy ko'rsatma asosida jismoniy cheklov (minimal muddatga).</li>
-                    </ul>
-                </div>
+    <!-- OQ KOD SECTION -->
+    <section id="oq-kod" class="code-section bg-white">
+        <div class="container">
+            <h2 class="section-title dark-text">«OQ KOD»</h2>
+            <p class="section-subtitle dark-text">AGRESSIYA VA TAHDID: XODIMLARNING HARAKAT ALGORITMI</p>
+            <div class="divider dark-divider"></div>
 
-                <div class="card">
-                    <h3>6. Yakunlash va Hodisadan keyingi harakatlar</h3>
-                    <ul>
-                        <li><strong>Yakunlash:</strong> Tahdidni bartaraf etish, bo'lim faoliyatini tiklash, ma'muriyatni xabardor qilish.</li>
-                        <li><strong>Hujjatlashtirish:</strong> Vaqti, ishtirokchilar, ko'rilgan choralar, hisobot rasmiylashtirilishi.</li>
-                        <li>Hodisani jamoaviy tahlil qilish (Debriefing) va profilaktik choralar.</li>
-                        <li>Har bir xodim agressiya belgilarini aniqlay olishi, deeskalatsiya ko'nikmalariga ega bo'lishi shart.</li>
-                    </ul>
+            <div class="content-block dark-text">
+                <h3>1. "OQ KOD" Qachon faollashtiriladi?</h3>
+                <p>Jismoniy agressiya, og‘zaki tahdidlar, buzg‘unchi xatti-harakatlar yoki hujum qilishga urinish holatlarida.</p>
+                <div class="highlight-box dark-box">
+                    <strong>TASHVISH SIGNALINI E'LON QILISH:</strong><br>
+                    “DIQQAT! OQ KOD!” — [hodisa sodir bo‘lgan joy]<br>
+                    <em>Xabar o'zbek va rus tillarida 2 martadan takrorlanishi shart!</em>
                 </div>
             </div>
-        </section>
 
-        <!-- QIZIL KOD SECTION -->
-        <section id="qizil-kod" class="code-section">
-            <div class="section-header">
-                <div class="icon-wrapper red">
-                    <i class="fa-solid fa-fire"></i>
-                </div>
-                <h1>"QIZIL KOD" FAOLLASHTIRILGANDA<br><span>Xodimlarining Harakat Algoritmi</span></h1>
+            <div class="content-block dark-text">
+                <h3>2. Shaxsiy va bemorlar xavfsizligini ta'minlash</h3>
+                <ul>
+                    <li>Xotirjamlikni saqlang va xavfsiz masofani saqlang.</li>
+                    <li>Chekinish uchun xavfsiz yo‘lni ochiq qoldiring.</li>
+                    <li>Begona shaxslar va himoyaga muhtoj bemorlarni xavfli hududdan olib chiqing.</li>
+                    <li>Hayotga bevosita tahdid bo‘lmasa, jismoniy kontaktga kirishmang.</li>
+                </ul>
             </div>
-            
-            <div class="content-body">
-                <div class="card warning-card">
-                    <h3><i class="fa-solid fa-fire-extinguisher"></i> 1. Harakatlar tartibi</h3>
-                    <p>Kuygan hid, tutunlanish, ochiq alanga yoki yong‘inning boshqa belgilaridan biri aniqlangan zahoti.</p>
-                    <p>Dispetcherga "QIZIL KOD", hodisaning aniq joyi (qavat, bo'lim) va vaziyat haqida qisqacha xotirjam ma'lumot bering.</p>
-                    <div class="alert-box">
-                        <strong>XAVF SIGNALINI E'LON QILISH:</strong><br>
-                        “DIQQAT! QIZIL KOD!<br>2-QAVAT. ENDOSKOPIYA BO‘LIMI. UYG‘ONISH XONASI.”
-                        <br><em>Xabar rus va o'zbek tillarida ikki marta e'lon qilinishi kerak.</em>
-                    </div>
-                </div>
 
-                <div class="card">
-                    <h3>2. Tibbiy muolajalarni to‘xtatish</h3>
-                    <ul>
-                        <li>Bajarilayotgan muolajalarni xavfsiz yakunlang.</li>
-                        <li>Agar xavfsiz bo'lsa, tibbiy uskunalarni elektr tarmog‘idan uzing.</li>
-                        <li>Bemor hayotiga xavf tug'dirmasa, kislorod, azot(I) oksidi (kuldiruvchi gaz) va boshqa tibbiy gazlar uzatilishini to‘xtating.</li>
-                    </ul>
-                </div>
+            <div class="content-block dark-text">
+                <h3>3. Nizoni deeskalatsiya qilish</h3>
+                <p>Deeskalatsiya usullariga o‘qitilgan xodim:</p>
+                <ul>
+                    <li>Tinch va sokin ohangda gapiradi.</li>
+                    <li>Sodda va aniq jumlalardan foydalanadi.</li>
+                    <li>Provokatsion gap va harakatlardan tiyiladi.</li>
+                    <li>Bemorning hissiyotlarini tan oladi va maqbul variantlarni taklif qiladi.</li>
+                </ul>
+            </div>
 
-                <div class="card">
-                    <h3>3. Bemorlarni evakuatsiya qilishni tashkil etish</h3>
-                    <ol>
-                        <li>Yong‘in hududida bo‘lgan bemorlar.</li>
-                        <li>Yondosh xonalardagi bemorlar.</li>
-                        <li>Boshqa bo‘limlardagi bemorlar (mas'ul shaxs ko'rsatmasiga muvofiq).</li>
-                    </ol>
-                    <p>Yotgan bemorlarni aravacha/zambil yoki adyoldan foydalanib olib chiqing. Bolalar tibbiyot xodimlari mas'uliyati ostida evakuatsiya qilinadi. <br><strong>LIFTLARDAN FOYDALANISH TAQIQLANADI!</strong></p>
-                </div>
+            <div class="content-block dark-text">
+                <h3>4. Xavfsizlik xizmati va Tibbiy choralar</h3>
+                <ul>
+                    <li>Agressiv shaxsni xavfsiz izolyatsiya qilish, hududga kirishni nazorat qilish. Zarurat bo'lsa Milliy gvardiyani chaqirish.</li>
+                    <li>Shifokor ko'rsatmasiga binoan: ruhiy holatni baholash, sedatsiya, qat'iy ko'rsatma asosida jismoniy cheklov.</li>
+                    <li>Hodisa majburiy hujjatlashtirilishi va tahlil qilinishi shart.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-                <div class="card">
-                    <h3>4. Yong'inni lokalizatsiya va tarqalishini cheklash</h3>
-                    <ul>
-                        <li><strong>Cheklash:</strong> Eshik va derazalarni yoping. Ventilyatsiya va konditsionerni o'chiring.</li>
-                        <li><strong>Lokalizatsiya:</strong> Yong'in o'chog'i kichik bo'lsa, o't o'chirgich yoki yong'inga qarshi matodan foydalaning.</li>
-                        <li>Kuchlanish ostidagi elektr uskunalari va tibbiy texnikani o'chirish uchun <strong>SUVDAN FOYDALANMANG!</strong></li>
-                    </ul>
-                </div>
+    <!-- QIZIL KOD SECTION -->
+    <section id="qizil-kod" class="code-section bg-red">
+        <div class="container">
+            <h2 class="section-title">«QIZIL KOD»</h2>
+            <p class="section-subtitle">YONG'IN XAVFSIZLIGI: XODIMLARNING HARAKAT ALGORITMI</p>
+            <div class="divider"></div>
 
-                <div class="card">
-                    <h3>5. Qutqaruvchilarni kutib olish va Evakuatsiyadan so'ng</h3>
-                    <ul>
-                        <li>Tayinlangan xodim qutqaruv bo'linmalarini kutib olib, binoning rejasini, kislorod ballonlar joyini ko'rsatadi.</li>
-                        <li>Evakuatsiya qilingan bemor va xodimlar ro'yxatini solishtiring.</li>
-                        <li>Zaharlanganlarga birinchi yordam ko'rsating.</li>
-                        <li>Odamlarning binoga o'zboshimchalik bilan qaytishiga yo'l qo'ymang.</li>
-                    </ul>
-                </div>
-
-                <div class="card">
-                    <h3>6. "QIZIL KOD" vaqtida taqiqlanadi va Majburiyatlar</h3>
-                    <ul>
-                        <li><strong>Taqiqlanadi:</strong> Liftlardan foydalanish, kuchli yonish bo'lgan xona eshiklarini ochish, bemorlarni qarovsiz qoldirish, vahima chiqarish.</li>
-                        <li><strong>Majburiyat:</strong> Har bir xodim harakat tartibini bilishi, xavfsizlik choralarini ko'rishi shart.</li>
-                    </ul>
+            <div class="content-block">
+                <h3>1. Harakatlar tartibi</h3>
+                <p>Kuygan hid, tutunlanish, ochiq alanga yoki yong‘inning boshqa belgilaridan biri aniqlangan zahoti.</p>
+                <div class="highlight-box">
+                    <strong>XAVF SIGNALINI E'LON QILISH:</strong><br>
+                    “DIQQAT! QIZIL KOD! 2-QAVAT. ENDOSKOPIYA BO‘LIMI. UYG‘ONISH XONASI.”<br>
+                    <em>Xabar rus va o'zbek tillarida ikki marta e'lon qilinishi kerak.</em>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <div class="content-block">
+                <h3>2. Tibbiy muolajalarni to‘xtatish</h3>
+                <ul>
+                    <li>Bajarilayotgan muolajalarni xavfsiz yakunlang.</li>
+                    <li>Tibbiy uskunalarni elektr tarmog‘idan uzing.</li>
+                    <li>Bemor hayotiga xavf tug'dirmasa, kislorod, azot(I) oksidi va boshqa tibbiy gazlar uzatilishini to‘xtating.</li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>3. Bemorlarni evakuatsiya qilish</h3>
+                <ol>
+                    <li>Yong‘in hududida bo‘lgan bemorlar.</li>
+                    <li>Yondosh xonalardagi bemorlar.</li>
+                    <li>Boshqa bo‘limlardagi bemorlar.</li>
+                </ol>
+                <p><strong>LIFTLARDAN FOYDALANISH QAT'IYAN TAQIQLANADI!</strong></p>
+            </div>
+
+            <div class="content-block">
+                <h3>4. Yong'inni lokalizatsiya va tarqalishini cheklash</h3>
+                <ul>
+                    <li>Eshik va derazalarni yoping, ventilyatsiyani o'chiring.</li>
+                    <li>Yong'in o'chog'i kichik bo'lsa o't o'chirgichdan foydalaning.</li>
+                    <li>Kuchlanish ostidagi elektr uskunalarini o'chirish uchun <strong>SUVDAN FOYDALANMANG!</strong></li>
+                </ul>
+            </div>
+
+            <div class="content-block">
+                <h3>5. Evakuatsiyadan so'ng va Taqiqlangan harakatlar</h3>
+                <ul>
+                    <li>Qutqaruvchilarni kutib oling, binoning rejasini ko'rsating.</li>
+                    <li>Evakuatsiya qilingan bemorlar va xodimlar ro'yxatini solishtiring.</li>
+                    <li><strong>Taqiqlanadi:</strong> Zarurat bo'lmasa eshiklarni ochish, bemorlarni qarovsiz qoldirish, vahima chiqarish.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container" style="text-align: center;">
+            <p>© 2026 Favqulodda Holatlar Tizimi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
